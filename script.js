@@ -36,7 +36,7 @@ const status = document.getElementById("formStatus");
 const submitButton = form.querySelector(".submit-button");
 const packageSelect = form.elements.package;
 
-const BRIEF_ENDPOINT = "";
+const BRIEF_ENDPOINT = "https://site-yslygi.netlify.app/.netlify/functions/send-brief";
 
 document.querySelectorAll("[data-package]").forEach((link) => {
   link.addEventListener("click", () => {

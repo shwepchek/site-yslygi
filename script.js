@@ -88,7 +88,7 @@ form.addEventListener("submit", async (event) => {
     const result = await response.json();
     if (!response.ok || result.ok !== true) throw new Error("Brief delivery failed");
     status.style.color = "#27824b";
-    status.textContent = "Готово! Бриф отправлен.";
+    status.textContent = "Готово! Бриф отправлен. В течение 8 часов вам напишет модератор, будьте готовы.";
     form.reset();
   } catch (error) {
     console.error("Не удалось отправить бриф:", error);

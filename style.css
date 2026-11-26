@@ -9,8 +9,8 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: 92px; }
-body { margin: 0; min-width: 320px; color: var(--ink); background: var(--paper); font-family: "Manrope", sans-serif; line-height: 1.55; overflow-x: hidden; }
+html { scroll-behavior: smooth; scroll-padding-top: 92px; overflow-x: clip; }
+body { margin: 0; color: var(--ink); background: var(--paper); font-family: "Manrope", sans-serif; line-height: 1.55; overflow-x: clip; }
 button, input, select, textarea { font: inherit; }
 a { color: inherit; text-decoration: none; }
 img, svg { display: block; }
@@ -102,7 +102,7 @@ h1 em, .contact-copy h2 em { color: var(--purple); font-style: normal; }
 
 .reveal { opacity: 0; transform: translateY(22px); transition: opacity .7s, transform .7s; }.reveal.visible { opacity: 1; transform: translateY(0); }
 @media (max-width: 1050px) {
-  .nav { gap: 18px; }.hero { grid-template-columns: 1fr; padding-top: 65px; }.hero-copy { position: relative; z-index: 3; }.hero-art { margin: -30px auto 0; width: min(600px,100%); }.hero-lead { max-width: 650px; }
+  .nav { gap: 18px; }.hero { grid-template-columns: minmax(0, 1fr); padding-top: 65px; }.hero-copy { position: relative; z-index: 3; }.hero-art { margin: -30px auto 0; width: min(600px,100%); }.hero-lead { max-width: 650px; }
   .services-grid,.pricing-grid { grid-template-columns: 1fr 1fr; }.service-card:last-child,.price-card:last-child { grid-column: span 2; }.work-grid { grid-template-columns: 1fr; }.visual-a,.visual-b { height: 480px; }.process-list li div { grid-template-columns: 240px 1fr; }.contact-wrap { gap: 50px; }
 }
 @media (max-width: 760px) {
